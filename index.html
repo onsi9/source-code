@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+    <h3>Example</h3>
+    <a href="#" class="button">Simple page</a>
+    <a href="#" class="link" id="current-page-link">Current Page</a>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+    <script>
+        var currentPageLink = document.getElementById('current-page-link');
+        currentPageLink.href = window.location.href;
+
+        document.title = "Example - " + currentPageLink.href;
+
+        currentPageLink.textContent = "" + currentPageLink.href;
+    </script>
+</body>
+</html>
+
